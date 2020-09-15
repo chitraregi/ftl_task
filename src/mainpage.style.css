@@ -1,0 +1,27 @@
+.all-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  padding: 2rem;
+  background-image: linear-gradient(
+    to right,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #b465da 0%,
+    #cf6cc9 33%,
+    #ee609c 66%,
+    #ee609c 100%
+  );
+}
+
+.content {
+  height: fit-content;
+  display: grid;
+  margin: 2rem auto;
+  background-color: #fcb1b1;
+  padding: 2rem;
+  padding-top: 0.5rem;
+  width: 30rem;
+  border: 2px solid #c40b13;
+  border-radius: 2rem;
+}

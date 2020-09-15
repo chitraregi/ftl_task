@@ -1,0 +1,80 @@
+.react-calendar__tile.highlight {
+  border: 1px solid black;
+  background-color: #931a25;
+  color: #be5683;
+}
+
+.react-calendar__tile.highlight:hover {
+  color: white;
+  background-color: #d54062;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #df2808;
+}
+
+.react-calendar__tile--active {
+  border: 2px solid black;
+  background-color: #b52b65;
+  border-radius: 50%;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #b52b65;
+}
+
+.react-calendar {
+  border-radius: 10px;
+}
+
+.react-calendar__tile {
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.react-calendar__tile--active.react-calendar__tile {
+  border: 1px solid #c26565;
+}
+
+.react-calendar {
+  margin: 2rem auto;
+  padding: 4px;
+  color: #776d8a;
+  background-color: #d49a89;
+  border: 3px solid black;
+}
+
+.react-calendar__year-view .react-calendar__tile,
+.react-calendar__decade-view .react-calendar__tile,
+.react-calendar__century-view .react-calendar__tile {
+  border-radius: 6px;
+}
+
+.show {
+  background-color: #9d65c9;
+
+  color: #8fcfd1;
+  height: 2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 4px;
+  font-family: "Ranchers", cursive;
+  cursor: pointer;
+}
+
+.cal-content {
+  font-family: "Ranchers", cursive;
+  color: whitesmoke;
+}
+
+.show-timing {
+  background-color: #d789d7;
+  color: #5d54a4;
+  height: 1.5rem;
+  border: 2px solid black;
+  border-radius: 3px;
+  margin: 4px;
+  font-family: "Ranchers", cursive;
+  cursor: pointer;
+}

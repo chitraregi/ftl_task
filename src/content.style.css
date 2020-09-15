@@ -1,0 +1,20 @@
+.details {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #66bfbf;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  text-shadow: 2px 2px black;
+}
+
+.tzone {
+  color: #66bfbf;
+  font-family: "Ubuntu", sans-serif;
+  text-shadow: 2px 2px black;
+}
+
+.tzone {
+  color: #056674;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
+}

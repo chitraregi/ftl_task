@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import Mainpage from "./Mainpage";
 
-function App() {
+const App = () => {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const getData = async () => {
+    const res = await fetch(`http://localhost:5000/members`);
+    const datares = await res.json();
+    console.log(datares);
+    await setData(datares);
+    console.log(data);
+    setLoading(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div classname="App">{loading ? "" : <Mainpage activity={data} />}</div>
   );
-}
+};
 
 export default App;

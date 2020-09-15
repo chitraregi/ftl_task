@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Ubuntu:wght@500&display=swap");
+
+.user-name {
+  color: #d62196;
+  font-family: "Lobster", cursive;
+  text-shadow: 2px 1px black;
+}
